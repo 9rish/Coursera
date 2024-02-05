@@ -1,0 +1,61 @@
+body {
+    margin: 0;
+    font-family: 'Your Chosen Font', sans-serif; /* Optional: Set a custom font */
+  }
+  
+  header {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between; /* Added to create space between boxes */
+  }
+  
+  .box {
+    box-sizing: border-box;
+    width: 30%; /* Adjusted width for three boxes in a row */
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #000;
+    background-color: #928d8d; /* Your chosen background color */
+    position: relative;
+  }
+  
+  .box h2 {
+    font-size: 125%;
+    font-family: 'Times New Roman', sans-serif; /* Optional: Increase font size for section titles */
+  }
+  
+  /* Section title region */
+  .box h2 {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #0ee1c8; /* Background color for section title region */
+    color: #fff; /* Text color for section title region */
+    padding: 5px 10px;
+    margin: 0;
+  }
+  
+  /* Media Queries for Responsive Design */
+  
+  @media (max-width: 991px) {
+    .box {
+      width: 48%; /* Two boxes side by side in tablet view */
+    }
+  
+    .box:nth-child(3) {
+      width: 100%; /* Full width for the third box in tablet view */
+    }
+  }
+  
+  @media (max-width: 767px) {
+    .box {
+      width: 100%; /* Full width for each box in mobile view */
+    }
+  }
+  
+  /* Add additional styling for colors, borders, etc. */
+  
